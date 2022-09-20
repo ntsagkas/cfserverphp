@@ -1,0 +1,18 @@
+[SITEUSER]
+user = SITEUSER
+group = SITEUSER
+listen = /var/run/phpVERSION-fpm-SITEUSER.sock
+listen.owner = www-data
+listen.group = www-data
+php_admin_value[disable_functions] = exec,passthru,shell_exec,system
+php_admin_flag[allow_url_fopen] = off
+pm = dynamic
+pm.max_children = 5
+pm.start_servers = 2
+pm.min_spare_servers = 1
+pm.max_spare_servers = 3
+chdir = SITE_DIR
+php_value[upload_max_filesize] = 50M
+php_value[post_max_size] = 50M
+php_value[max_execution_time] = 600
+php_value[memory_limit] = 512M
