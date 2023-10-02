@@ -3,7 +3,7 @@
 # Global Var
 NGINX_CONFIG='/etc/nginx/sites-available'
 NGINX_SITES_ENABLED='/etc/nginx/sites-enabled'
-WEB_DIR='/var/www'
+
 
 
 SELECTEDTEMPATE='drupal.template'
@@ -17,7 +17,7 @@ PHPVER=$3
 TEMPLATE=$4
 
 PHPFPMDIR=/etc/php/$3/fpm/pool.d
-SITE_DIR=/home/$SITEUSER/$SITEURL
+SITE_DIR=/var/www/$SITEURL
 SITE_DIR_PUB=$SITE_DIR
 
 
